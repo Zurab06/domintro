@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Super App</title>
+</head>
+
+<body>
+    <script>
+        const div1 = document.createElement("div")
+        const divText = document.createElement("div")
+        const ul = document.createElement("ul")
+        const li1 = document.createElement("li")
+        const li2 = document.createElement("li")
+        const li3 = document.createElement("li")
+        const link1 = document.createElement("a")
+        const link2 = document.createElement("a")
+        const link3 = document.createElement("a")
+        divText.textContent = "lorem iporem ipsum budu pit magic drunkorem ipsum budu pit magic drunkorem ipsum budu pit magic drunksumorem ipsum budu pit magic drunkorem ipsum budu pit magic drunk budu pit magic drunk"
+        
+
+        link1.href = "http://intocode.ru";
+        link1.title = "intocode"
+        link1.append(document.createTextNode("intocode"))
+        link1.target = "_blank"
+
+        link2.href="http://google.com"
+        link2.title = "google"
+        link2.append(document.createTextNode("google"))
+        link2.target = "_blank"
+
+        link3.href = "http//:instagram.com"
+        link3.title = "instagram"
+        link3.append(document.createTextNode("instagram"))
+        link3.target = "_blank"
+
+        li1.append(link1)
+        li2.append(link2)
+        li3.append(link3)
+        ul.append(li1, li2, li3)
+        ul.style.listStyle = "none"
+        ul.style.padding= "5px"
+
+
+        div1.append(divText, ul)
+
+
+        document.body.prepend(div1)
+        document.body.style.width = "100%"
+
+        divText.style.boxSizing = "border-box"
+        divText.style.borderRadius = "15px"
+        divText.style.border = "solid red"
+
+        div1.style.width = "40%"
+        div1.style.margin = "auto"
+
+        ul.style.display = "flex"
+        ul.style.justifyContent = "space-between"
+
+        div1.style.marginTop = "20px"
+        divText.style.padding = '10px'
+        divText.style.textAlign = 'center'
+        divText.style.borderWidth = "1px"
+
+
+    </script>
+
+</body>
+
+</html>
